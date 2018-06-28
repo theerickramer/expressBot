@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<style>
+  html,
+  body {
+    height: 100%;
+    font-family: 'Roboto Mono', sans-serif;
+  }
+
+  #chat {
+    list-style-type: none;
+    padding: 0;
+    height: calc(100% - 40px);
+  }
+
+  input {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 2rem;
+  }
+</style>
+
+<body>
+  <ul id="chat"></ul>
+  <input type="text" id="input">
+</body>
+<script>
+  const chat = document.getElementById('chat');
+  const input = document.getElementById('input');
+  input.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+      fetch(`/superscript?message=${input.value}`)
+        .then(response => response.json())
+        .then(json => {
+          render(input.value, 'user')
+          render(json.message)
+        })
+    }
+  })
+
+  render = (message, type) => {
+    const li = document.createElement('li');
+    if (type === 'user') {
+      li.innerText = `YOU: ${message}`;
+    } else {
+      li.innerText = `BOT: ${message}`;
+    }
+    chat.appendChild(li)
+    input.value = '';
+  }
+</script>
+
+</html>

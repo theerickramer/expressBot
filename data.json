@@ -1,0 +1,136 @@
+{
+    "topics": {
+        "random": {
+            "name": "random",
+            "flags": {
+                "keep": "keep"
+            },
+            "keywords": [],
+            "filter": null,
+            "gambits": [
+                "aI76X0Og",
+                "52SffO26",
+                "NQlK3aby",
+                "gWSU8bHZ"
+            ]
+        }
+    },
+    "gambits": {
+        "aI76X0Og": {
+            "trigger": {
+                "flags": {},
+                "filter": "^hasTag('hello')",
+                "question": false,
+                "raw": "*~2",
+                "clean": "\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "lRbIltwZ",
+                "Ml2GLwMt",
+                "OUldMamr",
+                "FRkAxwPQ",
+                "03E2ZbQe",
+                "RlGYIdsJ"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "52SffO26": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": true,
+                "raw": "What is your name",
+                "clean": "What is your name"
+            },
+            "replies": [
+                "cA1tauVT"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "NQlK3aby": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "[my name is] <name>",
+                "clean": "(?:(?:\\s|\\b)+(?:my name is)(?:\\s|\\b)+|(?:\\s|\\b)+)<name>"
+            },
+            "replies": [
+                "QKpAWVZV"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "gWSU8bHZ": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "*",
+                "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
+            },
+            "replies": [
+                "D8M70FNc"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        }
+    },
+    "replies": {
+        "lRbIltwZ": {
+            "string": "Hi!",
+            "filter": null,
+            "keep": false
+        },
+        "Ml2GLwMt": {
+            "string": "Hi, how are you?",
+            "filter": null,
+            "keep": false
+        },
+        "OUldMamr": {
+            "string": "How are you?",
+            "filter": null,
+            "keep": false
+        },
+        "FRkAxwPQ": {
+            "string": "Hello",
+            "filter": null,
+            "keep": false
+        },
+        "03E2ZbQe": {
+            "string": "Howdy",
+            "filter": null,
+            "keep": false
+        },
+        "RlGYIdsJ": {
+            "string": "Ola",
+            "filter": null,
+            "keep": false
+        },
+        "cA1tauVT": {
+            "string": "My name is Sho. What is your name?",
+            "filter": null,
+            "keep": false
+        },
+        "QKpAWVZV": {
+            "string": "Nice to meet you <cap>",
+            "filter": null,
+            "keep": false
+        },
+        "D8M70FNc": {
+            "string": "um, ok",
+            "filter": null,
+            "keep": false
+        }
+    },
+    "checksums": {
+        "./chat/main.ss": "5df13997bdb5852a64cfa375814c9edf1fafd51d"
+    },
+    "version": 1
+}
