@@ -9,5 +9,11 @@
 - My name is Sho. What is your name?
 + [my name is] <name>
 - Nice to meet you <cap>
++ I love ~animals
+- Me too!
++ * weather in *(1-4)
+- ^getWeather(<cap>)
++ * [joke|jokes]
+- ^getJoke()
 + *
 - um, ok

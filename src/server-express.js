@@ -11,6 +11,9 @@ server.use(express.static('public'));
 let bot;
 const options = {
   factSystem: {
+    importData: [
+      './facts/animals.top'
+    ],
     clean: true
   },
   importFile: './data.json'

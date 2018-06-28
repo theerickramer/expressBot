@@ -8,15 +8,18 @@
             "keywords": [],
             "filter": null,
             "gambits": [
-                "aI76X0Og",
-                "52SffO26",
-                "NQlK3aby",
-                "gWSU8bHZ"
+                "qA2fmFeA",
+                "qHd4LCDs",
+                "AD347ZG3",
+                "xmAcUHAb",
+                "FGqDqlzO",
+                "qetE1M8w",
+                "70GvAY5T"
             ]
         }
     },
     "gambits": {
-        "aI76X0Og": {
+        "qA2fmFeA": {
             "trigger": {
                 "flags": {},
                 "filter": "^hasTag('hello')",
@@ -25,18 +28,18 @@
                 "clean": "\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
             },
             "replies": [
-                "lRbIltwZ",
-                "Ml2GLwMt",
-                "OUldMamr",
-                "FRkAxwPQ",
-                "03E2ZbQe",
-                "RlGYIdsJ"
+                "0Ukl8A2W",
+                "LfC3mzgv",
+                "mHz4AqfI",
+                "2M7aUY1b",
+                "3gj2jcEK",
+                "denfeDku"
             ],
             "conditional": null,
             "conversation": null,
             "topic": "random"
         },
-        "52SffO26": {
+        "qHd4LCDs": {
             "trigger": {
                 "flags": {},
                 "filter": null,
@@ -45,13 +48,13 @@
                 "clean": "What is your name"
             },
             "replies": [
-                "cA1tauVT"
+                "4rjs577A"
             ],
             "conditional": null,
             "conversation": null,
             "topic": "random"
         },
-        "NQlK3aby": {
+        "AD347ZG3": {
             "trigger": {
                 "flags": {},
                 "filter": null,
@@ -60,13 +63,58 @@
                 "clean": "(?:(?:\\s|\\b)+(?:my name is)(?:\\s|\\b)+|(?:\\s|\\b)+)<name>"
             },
             "replies": [
-                "QKpAWVZV"
+                "TocshdyC"
             ],
             "conditional": null,
             "conversation": null,
             "topic": "random"
         },
-        "gWSU8bHZ": {
+        "xmAcUHAb": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "I love ~animals",
+                "clean": "I love(?=^|\\s)\\s*(birds|cats|cows|dogs|fish|pigs|animals)(?=\\s|$)\\s*"
+            },
+            "replies": [
+                "n7oNadnS"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "FGqDqlzO": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "* weather in *(1-4)",
+                "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?weather in\\s*((?:[^\\s]+\\s+){0,3}(?:[^\\s]+))\\s*"
+            },
+            "replies": [
+                "qUBYM9yK"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "qetE1M8w": {
+            "trigger": {
+                "flags": {},
+                "filter": null,
+                "question": false,
+                "raw": "* [joke|jokes]",
+                "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?(?:(?:\\s|\\b)+(?:joke|jokes)(?:\\s|\\b)+|(?:\\s|\\b)+)"
+            },
+            "replies": [
+                "MXx0cDSC"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        },
+        "70GvAY5T": {
             "trigger": {
                 "flags": {},
                 "filter": null,
@@ -75,7 +123,7 @@
                 "clean": "(?:(?=^|\\s)\\s*(?:.*)(?=\\s|$)\\s*)?"
             },
             "replies": [
-                "D8M70FNc"
+                "2LrTqDWK"
             ],
             "conditional": null,
             "conversation": null,
@@ -83,54 +131,69 @@
         }
     },
     "replies": {
-        "lRbIltwZ": {
+        "0Ukl8A2W": {
             "string": "Hi!",
             "filter": null,
             "keep": false
         },
-        "Ml2GLwMt": {
+        "LfC3mzgv": {
             "string": "Hi, how are you?",
             "filter": null,
             "keep": false
         },
-        "OUldMamr": {
+        "mHz4AqfI": {
             "string": "How are you?",
             "filter": null,
             "keep": false
         },
-        "FRkAxwPQ": {
+        "2M7aUY1b": {
             "string": "Hello",
             "filter": null,
             "keep": false
         },
-        "03E2ZbQe": {
+        "3gj2jcEK": {
             "string": "Howdy",
             "filter": null,
             "keep": false
         },
-        "RlGYIdsJ": {
+        "denfeDku": {
             "string": "Ola",
             "filter": null,
             "keep": false
         },
-        "cA1tauVT": {
+        "4rjs577A": {
             "string": "My name is Sho. What is your name?",
             "filter": null,
             "keep": false
         },
-        "QKpAWVZV": {
+        "TocshdyC": {
             "string": "Nice to meet you <cap>",
             "filter": null,
             "keep": false
         },
-        "D8M70FNc": {
+        "n7oNadnS": {
+            "string": "Me too!",
+            "filter": null,
+            "keep": false
+        },
+        "qUBYM9yK": {
+            "string": "^getWeather(<cap>)",
+            "filter": null,
+            "keep": false
+        },
+        "MXx0cDSC": {
+            "string": "^getJoke()",
+            "filter": null,
+            "keep": false
+        },
+        "2LrTqDWK": {
             "string": "um, ok",
             "filter": null,
             "keep": false
         }
     },
     "checksums": {
-        "./chat/main.ss": "5df13997bdb5852a64cfa375814c9edf1fafd51d"
+        "./chat/main.ss": "163dab3524e13968296862d5ffa7dd148ec674e5"
     },
     "version": 1
 }
